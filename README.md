@@ -1,6 +1,6 @@
 # Installation guide for WCA on Eclipse
 
-This document gives infomration on installing software tools with Eclipse IDE that are needed to run **Watson Code Assistant**
+This document gives infomration on installing software tools with Eclipse IDE that are needed to run **watsonx Code Assistant**
 
 ## Environment setup 
 
@@ -8,8 +8,8 @@ This document gives infomration on installing software tools with Eclipse IDE th
 
 To ensure that your developers can connect the IDE extension or plug-in, you need to allow access to IBM Cloud URLs. Make sure your organization's network allows access to:
 
-https://iam.cloud.ibm.com/
-https://api.dataplatform.cloud.ibm.com/
+- https://iam.cloud.ibm.com/
+- https://api.dataplatform.cloud.ibm.com/
 
 ### 2. Java installation
 
@@ -96,8 +96,8 @@ java --version
 
 - [Eclipse Official Website](https://www.eclipse.org/downloads/) for installation
 - The plug-in is compatible with:
-    - Eclipse IDE for Java Developers or Eclipse IDE for Enterprise Java and Web Developers
-    - Versions 2024-06, 2024-09, and 2024-12
+    - **Eclipse IDE for Java Developers** or **Eclipse IDE for Enterprise Java and Web Developers**
+    - Versions **2024-06**, **2024-09**, and **2024-12**
 - On Windows, the plug-in requires the Microsoft Edge WebView2 runtime. In newer versions of Windows this might already be installed.
 - Operating systems:
     - MacOS
