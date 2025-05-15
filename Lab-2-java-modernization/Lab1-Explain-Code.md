@@ -36,17 +36,7 @@ For Windows users, you might need to give full path for the build files `was_pub
 
 ### 3. View Liberty App
 
-To deploy the application on Liberty, you need to enable the Liberty Maven plug-in in your project. Add the Liberty Maven plug-in to the <plugins> section within the <build> block of your pom.xml file:
-
-```
-<plugin>
-    <groupId>io.openliberty.tools</groupId>
-    <artifactId>liberty-maven-plugin</artifactId>
-    <version>3.11.2</version>
-</plugin>
-```
-
-Open a terminal, ensure it is located at the your sample-app-mod-v1 project directory, and start the application in Liberty dev mode:
+Open a terminal, ensure it is located at the your modresorts-twas-j8 project directory, and start the application in Liberty dev mode:
 
 ```
 mvn liberty:dev
