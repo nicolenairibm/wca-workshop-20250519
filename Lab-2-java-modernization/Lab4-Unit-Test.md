@@ -4,7 +4,7 @@ This document gives step-by-step guide to finish Lab4.
 
 ## Lab4 covers:
 
-- Gemerate unit test cases
+- Generate unit test cases
 
 
 ### 1. Gemerate unit test for a given script
