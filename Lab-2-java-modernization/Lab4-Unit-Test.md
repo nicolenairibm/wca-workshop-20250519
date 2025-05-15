@@ -11,10 +11,10 @@ This document gives step-by-step guide to finish Lab4.
 
 Right click on the any file, for example the ``
 
-![screenshot](./images/VSC_unit_test.png)
+![screenshot](./images/Eclipse_unit_test.png)
 
 The chat session will show again with the generated test cases.
 
 Right click on the any file, for example the ``
 
-![screenshot](./images/VSC_unit_test_chat.png)
+![screenshot](./images/Eclipse_unit_test_chat.png)

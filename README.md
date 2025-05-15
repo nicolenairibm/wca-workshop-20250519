@@ -1,13 +1,12 @@
 # Installation guide for WCA on Eclipse
 
-This document gives infomration on installing software tools with Eclipse IDE that are needed to run **watsonx Code Assistant**
+This document gives information on installing software tools with Eclipse IDE that are needed to run **watsonx Code Assistant**
 
 ## Environment setup 
 
 ### 1. Set up your network
 
 To ensure that your developers can connect the IDE extension or plug-in, you need to allow access to IBM Cloud URLs. Make sure your organization's network allows access to:
-
 - https://iam.cloud.ibm.com/
 - https://api.dataplatform.cloud.ibm.com/
 
@@ -21,11 +20,10 @@ To ensure that your developers can connect the IDE extension or plug-in, you nee
 All the above are compressed files, you can extract them to any folder in your local.
 
 - Check if Java is installed properly:
-```bash
-java --version
-```
-
-- After installing java, add java to `PATH` variable and set `JAVA_HOME` envitonment variable
+  ```bash
+  java --version
+  ```
+- After installing java, add java to `PATH` variable and set `JAVA_HOME` environment variable
 - **For Mac**:
   - Open .zshrc or .bash_profile
       ```bash
@@ -50,7 +48,7 @@ java --version
 - **For Windows**:
   - Open Environment variables using windows search bar (search for edit environment variables in the search bar)
   
-  ![alt text](./images/image_env_variables_windows.png)
+    ![alt text](./images/image_env_variables_windows.png)
 
   - Set JAVA_HOME variable using Environment variables (click on new if you do not have a JAVA_HOME set or click on edit to change the existing JAVA_HOME, and point it to the Java you installed in the earlier steps:
     
@@ -118,6 +116,7 @@ If your organization uses an HTTP proxy server, you need to update your Eclipse 
 6. If you need to include authentication information, click Requires Authentication, then enter your username and password.
 7. Click OK to apply the changes.
 
+
 ### 6. WCA API Key
 
 You will be given API key by the workshop instructors via email. If you have any issue accessing the API key, please raise it to the instructor.
@@ -133,6 +132,7 @@ To install the plug-in from the Eclipse Marketplace:
 6. On Trust Authorities, click the checkbox, then click Trust Selected.
 7. On Trust Artifacts, click the Type checkbox, then click Trust Selected.
 8. You need to restart Eclipse. On Software Updates, click Restart Now.
+
 ![screenshot](./images/Eclipse_WCA4J_Plugin.png)
 
 ### 8. Log into WCA
@@ -148,7 +148,11 @@ To install the plug-in from the Eclipse Marketplace:
 
 ![screenshot](./images/Eclipse_WCA4J_Sign_in.png)
 
-### 9. Installing Liberty Tools and Java Extension
+### 9. Test that the watsonx Code Assistant plugin is working
+
+- Type a programming question in the chat.
+
+### 10. Installing Liberty Tools and Java Extension
 
 Install Liberty Tools from Eclipse marketplace as shown below.
 

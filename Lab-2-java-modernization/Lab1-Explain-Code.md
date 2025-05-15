@@ -36,16 +36,23 @@ For Windows users, you might need to give full path for the build files `was_pub
 
 ### 3. View Liberty App
 
-After you installed LibertyTools from VSCode marketplace, there should be a Liberty Dashboard section in your explorer. Click `Add project to Liberty Dashboard` and put the path to the `modresort-twas-j8` folder (this would be automatic if you open in this project).
+To deploy the application on Liberty, you need to enable the Liberty Maven plug-in in your project. Add the Liberty Maven plug-in to the <plugins> section within the <build> block of your pom.xml file:
 
-![screenshot](./images/VSC_LibertyTools_dashboard_1.png)
+```
+<plugin>
+    <groupId>io.openliberty.tools</groupId>
+    <artifactId>liberty-maven-plugin</artifactId>
+    <version>3.11.2</version>
+</plugin>
+```
 
-Once you selected the right project, a `modresrots` app will show up. Right click on the app to start.
+Open a terminal, ensure it is located at the your sample-app-mod-v1 project directory, and start the application in Liberty dev mode:
 
-![screenshot](./images/VSC_LibertyTools_dashboard_2.png)
+```
+mvn liberty:dev
+```
 
-VSCode will go through downloading required packages, which you can see in terminal. 
-
+Once the server starts, visit http://localhost:9080/resorts in your browser. You should see the application’s homepage.
 ![screenshot](./images/VSC_Liberty_App_start.png)
 
 Once the app started, you can get the url (in my case `http://localhost:9080/resorts/`) and open in your browser to checkout the web app.
@@ -69,16 +76,14 @@ We will **fix these errors** in the later labs.
 
 To understand the whole project, right click on the `modresorts-twas-j8` folder and select `watsonx Code Assistant` - `Explain Application`.
 
-![screenshot](./images/VSC_explain_code.png)
+![screenshot](./images/Eclipse_explain_code.png)
 
 VSCode will prompt you that the process takes extra time. Click `Proceed with code analysis`.
 
-![screenshot](./images/VSC_explain_code_proceed.png)
+![screenshot](./images/Eclipse_explain_code_proceed.png)
 
 The analysis might take 1-2 minutes to finish and a prompt will show up in the bottom right cornor.
 
-![screenshot](./images/VSC_explain_code_finish.png)
-
 Now we can open the report and read through the details.
 
-![screenshot](./images/VSC_explain_code_report.png)
+![screenshot](./images/Eclipse_explain_code_report.png)
